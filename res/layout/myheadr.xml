@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/note_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:clickable="true"
+        android:onClick="change_bg"
+        android:scaleType="fitXY"
+        android:src="@drawable/img1" />
+
+    <com.example.notes.view.RoundImage
+        android:id="@+id/note_user_head"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="165dp"
+        android:clickable="true"
+        android:onClick="to_userinfo"
+        android:src="@drawable/icon_user_head" />
+
+    <TextView
+        android:id="@+id/note_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/note_user_head"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="5dp"
+        android:text="倾城笛歌"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+</RelativeLayout>

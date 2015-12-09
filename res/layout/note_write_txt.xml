@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    tools:context="com.example.notes.Note_write_txt"
+    
+    >
+
+    <RelativeLayout
+        android:id="@+id/note_write_txt_title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="#049CDB"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/note_write_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:clickable="true"
+            android:text="取消"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="发布笔记"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/note_write_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:clickable="true"
+            android:src="@drawable/icon_fabu" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/text_area"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" >
+
+        <EditText
+            android:id="@+id/note_write_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:ems="10"
+            android:hint="请输入标题" >
+
+            <requestFocus />
+        </EditText>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/note_write_title"
+            android:background="#E2E2E2" />
+
+        <EditText
+            android:id="@+id/note_write_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/note_write_title"
+            android:ems="10"
+            android:gravity="left"
+            android:hint="日记内容……"
+            android:inputType="textMultiLine"
+            android:minHeight="150dp" />
+
+        <LinearLayout
+            android:id="@+id/audio"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/note_write_msg"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/icon_audio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_audio" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/note_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/audio"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:onClick="getLocation" >
+
+            <ImageView
+                android:id="@+id/location_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/icon_location" />
+
+            <TextView
+                android:id="@+id/note_location_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/location_icon"
+                android:text="所在位置" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/emj"
+            android:background="#E2E2E2" />
+        <ImageView
+            android:id="@+id/emj"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:clickable="true"
+            android:onClick="getEmotion"
+            android:src="@drawable/icon_emj" />
+    </RelativeLayout>
+        <LinearLayout
+        android:id="@+id/ll_emotion_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_emotion_dashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+</LinearLayout>

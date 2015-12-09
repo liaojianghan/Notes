@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/head_popmenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/menu1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/ic_preference_first_normal"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/menuItem1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="拍照"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/menu2"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_preference_last_normal"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/menuItem2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="从手机相册选取"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/menu3"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ic_preference_single_normal"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/menuItem3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="取消"
+            android:textColor="@color/main_txt_normal"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</LinearLayout>

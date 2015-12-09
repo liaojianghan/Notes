@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.boredream.emotiondemo.MainActivity" >
+
+    <Button
+        android:id="@+id/btn_emotion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="显示/隐藏表情面板" />
+
+    <LinearLayout
+        android:id="@+id/ll_emotion_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_emotion_dashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_emotion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:gravity="top" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

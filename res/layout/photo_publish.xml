@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:id="@+id/actionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#58c5c7"
+        >
+        <TextView 
+        android:id="@+id/photo_back"    
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            
+            
+            
+            />
+        
+        <TextView 
+        android:id="@+id/photo_biaoti"    
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="心情发布"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+            
+            
+            
+            />
+        
+            <TextView
+                android:id="@+id/photo_publish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="发布" 
+                android:layout_marginRight="10dp"/>
+        
+    </RelativeLayout>
+
+         <EditText 
+   
+        android:id="@+id/edit"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="5dp"
+        android:gravity="top" 
+        />
+        
+
+   
+   <ImageView 
+       android:id="@+id/photo_publish_one"
+       android:layout_width="80dp"
+       android:layout_height="80dp"
+       android:src="@drawable/icon_user_head"
+       android:layout_marginLeft="20dp"
+       
+       />
+
+        
+
+    <RelativeLayout 
+        android:id="@+id/photo_pulish_q"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+            android:id="@+id/one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/icon_location" />
+    <TextView android:id="@+id/photo_address"
+              android:layout_toRightOf="@id/one"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="所在位置"
+              android:textColor="#c0c0c0"
+        
+        
+        />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher" />
+               
+    </LinearLayout> 
+            
+            
+            
+            
+            
+            
+        
+        
+          
+        
+        
+        
+   
+    
+    
+
+
+
+

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/note_take_photo"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/ic_preference_first_normal"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:text="拍照"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/note_txt"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/ic_preference_normal"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="文本"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/note_weilaixin"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/ic_preference_normal"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="未来信"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/note_short_aduio"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/ic_preference_normal"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="短音频"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/note_from_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/ic_preference_last_normal"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="从手机相册选取"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/note_write_cancle"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ic_preference_single_normal"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="取消"
+            android:textColor="@color/main_txt_normal"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</LinearLayout>
